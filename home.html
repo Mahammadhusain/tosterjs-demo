@@ -38,3 +38,27 @@
         {% endif %}
     {% endfor %}
 {% endif %}
+
+
+
+<!-- toster Customization -->
+
+<script type=text/javascript>
+                toastr.options = {
+                'closeButton': true,
+				'debug': false,
+				'newestOnTop': false,
+				'progressBar': true,
+				'positionClass': 'toast-top-right',
+				'preventDuplicates': true,
+				'showDuration': '500',
+				'hideDuration': '1000',
+				'timeOut': '1000',
+				'extendedTimeOut': '0',
+				'showEasing': 'swing',
+				'hideEasing': 'linear',
+				'showMethod': 'fadeIn',
+				'hideMethod': 'fadeOut',
+			}
+      toastr.{{ message.tags }}('{{ message }}')
+</script>
